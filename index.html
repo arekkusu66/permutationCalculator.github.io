@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permutations calc</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="flex-pos">
+        <div class="container">
+
+            <div class="re-or"> 
+                <p>is repetition allowed?</p>
+                <button id="rep-btn" class="rep-btn-yes" onclick="repetitionToggle()">yes</button>
+            </div>
+
+            <div class="re-or">
+                <p>is order important?</p>
+                <button id="ord-btn" class="ord-btn-yes" onclick="orderToggle()">yes</button>
+            </div>
+
+
+
+            <div>
+                <label for="n-input">number of items(n)</label>
+                <input id="n-input" type="text" pattern="[0-9]*">
+            </div>
+
+            <div>
+                <label for="r-input">number to choose(r)</label>
+                <input id="r-input" type="text" pattern="[0-9]*">
+            </div>
+
+
+
+            <button class="result-btn" onclick="permutations()">result:</button>
+            <div id="result" class="result"></div>
+
+        </div>
+    </div>    
+</body>
+</html>
